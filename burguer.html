@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Burguer Bob</title>
+</head>
+<body>
+    <h1>Bienvenido a Burger Bob</h1>
+    
+    <!-- Escenario 1
+     Tarea 1 -->
+    <button onclick="mostrarAlertaHamburguesa()">¡VEN A BURGER TOWN!</button>
+    
+    <br><br>
+    
+    <!-- Tarea 2 -->
+    <span onclick="mensajeSecreto()" style="cursor: pointer; color: blue; text-decoration: underline;">BURGER TOWN!</span>
+    
+    <br><br>
+    <hr>
+    <br>
+    
+    <!-- Escenario 2
+    Tarea 3 -->
+    <h2 id="tituloHamburguesa">¡Una imagen de una HAMBURGUESA!😱</h2>
+    
+    <img src="https://ih1.redbubble.net/image.5372998579.2627/st,small,507x507-pad,600x600,f8f8f8.u1.jpg" 
+         alt="Deliciosa hamburguesa 😋" 
+         style="width: 300px; height: 200px; border-radius: 10px;">
+    
+    <br><br>
+    
+    <!-- Tarea 4 -->
+    <p>Haz clic en esta palabra para cambiar el color del título: 
+       <span onclick="cambiarColorTitulo()" style="cursor: pointer; color: orange; font-weight: bold; text-decoration: underline;">¡ARROZ!</span>
+    </p>
+
+    <script>
+        function mostrarAlertaHamburguesa() {
+            alert('¡ES HORA DE UNA HAMBURGUESA!🍔');
+            console.log('Usuario hizo clic en VEN A BURGER TOWN');
+        }
+
+        // Tarea 2
+        function mensajeSecreto() {
+            console.log('Alguien hizo clic en BURGER TOWN!');
+        }
+
+        // Tarea 4 cambiando a color rojo
+        function cambiarColorTitulo() {
+            const titulo = document.getElementById('tituloHamburguesa');
+            
+            titulo.style.color = 'red';
+            console.log('El título cambió a color rojo');
+        }
+    </script>
+
+</body>
+</html>
